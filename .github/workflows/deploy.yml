@@ -33,7 +33,7 @@ jobs:
         run: pnpm install
 
       - name: Build slides
-        run: pnpm build --base /nextjs-nuxt-migration-slides/ --download false
+        run: pnpm build --base /nextjs-nuxt-migration-slides/
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

@@ -13,7 +13,7 @@ fonts:
 drawings:
   enabled: true
   persist: false
-download: true
+download: false
 ---
 
 # Next.js to Nuxt 4 Migration
