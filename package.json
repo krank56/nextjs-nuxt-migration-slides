@@ -1,0 +1,16 @@
+{
+  "name": "nextjs-nuxt-migration-presentation",
+  "private": true,
+  "scripts": {
+    "dev": "slidev",
+    "build": "slidev build",
+    "export": "slidev export"
+  },
+  "dependencies": {
+    "@iconify-json/carbon": "^1.2.8",
+    "@iconify-json/logos": "^1.2.4",
+    "@iconify-json/mdi": "^1.2.2",
+    "@slidev/cli": "^51.5.1",
+    "@slidev/theme-default": "latest"
+  }
+}
