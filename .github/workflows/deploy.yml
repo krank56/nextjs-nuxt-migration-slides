@@ -33,7 +33,7 @@ jobs:
         run: pnpm install
 
       - name: Build slides
-        run: pnpm build --base /nextjs-nuxt-migration-slides/
+        run: pnpm build --base /nextjs-nuxt-migration-slides/ --download false
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
@@ -43,7 +43,7 @@ jobs:
   deploy:
     environment:
       name: github-pages
-      url: \${{ steps.deployment.outputs.page_url }}
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     needs: build
     steps:
